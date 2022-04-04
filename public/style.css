@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .description {
+  text-align: left;
+  padding-right: 100px;
+}
+
+main .description h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 42px;
+  padding: 10px 0;
+}
+main .description h1 img {
+  vertical-align: text-bottom;
+}
+
+main .description p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+main .title-img {
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgb(133, 133, 133);
+}
+
+section {
+  background-color: rgb(244, 246, 253);
+}
+
+section .container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+section .container h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+section .container p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+section .container pre{
+  background-color: #fff;
+  padding: 14px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1280px) {
+  main .description {
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  section .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  section .container {
+    width: 90%;
+  }
+}
